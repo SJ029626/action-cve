@@ -63,7 +63,7 @@ export const validateSlackWebhookUrl = (url: string): boolean => {
   return regexPattern.test(url)
 }
 
-export const MAX_COUNT_SLACK = 30
+export const MAX_COUNT_SLACK = 1000
 
 export const sendAlertsToSlack = async (
   webhookUrl: string,
